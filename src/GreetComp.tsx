@@ -1,11 +1,17 @@
 import React from 'react'
 
-type GreetProps = { name: string, age?: number}
+type GreetProps = {
+    info : {
+        firstName: string
+        lastName: string
+        age: number
+    }
+}
 
-export default function GreetComp(props: GreetProps) {
+export default function GreetComp({info}: GreetProps) {
     return (
         <div>
-            Hello my guy {props.name} and my age is {props.age}
+            my firstname is {info.firstName} and my last name is {info.lastName}, i'm {info.age} old
         </div>
     )
 }
