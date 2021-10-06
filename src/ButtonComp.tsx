@@ -7,7 +7,7 @@ type ButtonProps = {
 export default function ButtonComp(props: ButtonProps) {
     return (
         <div>
-            <button onClick={props.handleClick}>Say Hi to</button>
+            <button onClick={props.handleClick}>Say Hi to mr stanely</button>
         </div>
     )
 }
