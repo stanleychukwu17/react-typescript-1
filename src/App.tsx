@@ -9,7 +9,7 @@ function App() {
   console.log(dts)
   return (
     <div className="App">
-      <Status />
+      <Status msg='success' />
     </div>
   );
 }
