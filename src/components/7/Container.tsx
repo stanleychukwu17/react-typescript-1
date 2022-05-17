@@ -1,8 +1,10 @@
-import React from 'react'
+type containerProps = {
+    style: React.CSSProperties
+}
 
-export default function Container() {
+export default function Container(props: containerProps) {
   return (
-    <div style={{color: '#df0e3a', fontWeight: 'bold'}}>
+    <div style={props.style}>
         This is from stanley the man
     </div>
   )

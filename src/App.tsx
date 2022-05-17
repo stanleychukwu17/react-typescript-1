@@ -37,7 +37,7 @@ function App() {
 
       <div className='cover'>
         <h1>Lecture 7</h1>
-        <Container />
+        <Container style={{color: 'green', fontWeight: 'bold'}} />
       </div>
 
 
