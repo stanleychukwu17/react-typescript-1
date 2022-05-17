@@ -11,9 +11,11 @@ import Button from './components/6/Button';
 import Input from './components/6/Input';
 import Container from './components/7/Container';
 
+// please note that props can also be destructured
+// const get_user = ({name, age, gender} : userProps) => this is me right here
+
 function App() {
-  const dts: object = {'firstName':'stanely', 'lastName':'chukwu', 'age':26}
-  console.log(dts)
+  // const dts: object = {'firstName':'stanely', 'lastName':'chukwu', 'age':26}
 
   return (
     <div className="App">
