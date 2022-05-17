@@ -17,6 +17,9 @@ import Container from './components/7/Container';
 // lecture-11 - useState Type Assertion
 import UserDts from './components/11/User';
 
+// lecture-18 - Component Prop
+import Private from './components/18/Private';
+
 function App() {
   // const dts: object = {'firstName':'stanely', 'lastName':'chukwu', 'age':26}
 
@@ -51,6 +54,10 @@ function App() {
       </div>
 
 
+      <div className='cover'>
+        <h1>Lecture 18</h1>
+        <Private isLoggedIn={false} />
+      </div>
 
       <div>
         <br></br>
