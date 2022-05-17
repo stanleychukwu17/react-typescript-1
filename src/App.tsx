@@ -1,18 +1,21 @@
 import React from 'react';
 import './App.css';
 
-// the below are all from lecture-5 - Advanced props
+// lecture-5 - Advanced props
 import Status from './components/5/Status';
 import Heading from './components/5/Heading';
 import Oscar from './components/5/Oscar';
 
-// the below are all from lecture-6 - Event props & lecture-7 style props
+// lecture-6 - Event props & lecture-7 style props
 import Button from './components/6/Button';
 import Input from './components/6/Input';
 import Container from './components/7/Container';
 
 // please note that props can also be destructured
 // const get_user = ({name, age, gender} : userProps) => this is me right here
+
+// lecture-11 - useState Type Assertion
+import UserDts from './components/11/User';
 
 function App() {
   // const dts: object = {'firstName':'stanely', 'lastName':'chukwu', 'age':26}
@@ -40,6 +43,11 @@ function App() {
       <div className='cover'>
         <h1>Lecture 7</h1>
         <Container style={{color: 'green', fontWeight: 'bold'}} />
+      </div>
+
+      <div className='cover'>
+        <h1>Lecture 11</h1>
+        <UserDts />
       </div>
 
 
