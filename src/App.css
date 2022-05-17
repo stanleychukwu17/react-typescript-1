@@ -32,3 +32,9 @@
     transform: rotate(360deg);
   }
 }
+div.cover {
+  margin: 20px 0; font-size: 14px;
+}
+h1, h2 {
+  margin: 5px 0; font-size: 17px;
+}
