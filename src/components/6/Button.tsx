@@ -2,11 +2,11 @@ type buttonProps = {
     clickHandler: (event: React.MouseEvent<HTMLButtonElement>, id?: number) => void
 }
 
-export default function Button(props: buttonProps) {
+export default function Button({clickHandler}: buttonProps) {
 
     return (
     <div>
-        <button onClick={(event)=> props.clickHandler(event, 22)}>Click me</button>
+        <button onClick={(event)=> clickHandler(event, 22)}>Click me</button>
     </div>
     )
 }
