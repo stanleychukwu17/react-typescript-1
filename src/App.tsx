@@ -19,6 +19,8 @@ import UserDts from './components/11/User';
 
 // lecture-18 - Component Prop
 import Private from './components/18/Private';
+import P2 from './components/18/eg2/P2';
+import U2 from './components/18/eg2/U2';
 
 function App() {
   // const dts: object = {'firstName':'stanely', 'lastName':'chukwu', 'age':26}
@@ -36,7 +38,7 @@ function App() {
 
       <div className='cover'>
         <h1>Lecture 6</h1>
-        <Button clickHandler={(event, id) => { console.log('clicked me', event, id) }} />
+        <Button clickHandler={(event, id?: number) => { console.log('clicked me', event, id) }} />
         <Input
           value='james'
           changeHandler={(event) => { console.log('changed me', event, event.target.value) }}
@@ -56,7 +58,9 @@ function App() {
 
       <div className='cover'>
         <h1>Lecture 18</h1>
-        <Private isLoggedIn={false} />
+        {<Private isLoggedIn={false} />}
+        <br></br>----
+        <P2 isLoggedIn={true} component={U2} />
       </div>
 
       <div>
