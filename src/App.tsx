@@ -22,8 +22,11 @@ import Private from './components/18/Private';
 import P2 from './components/18/eg2/P2';
 import U2 from './components/18/eg2/U2';
 
+// Lecture-19 - Generics
+import { List } from './components/19/List';
+
 function App() {
-  // const dts: object = {'firstName':'stanely', 'lastName':'chukwu', 'age':26}
+  const itemsToSend: string[] = ['stanley', 'chino', 'danzy', 'pamela']
 
   return (
     <div className="App">
@@ -58,10 +61,17 @@ function App() {
 
       <div className='cover'>
         <h1>Lecture 18</h1>
-        {<Private isLoggedIn={false} />}
+        <Private isLoggedIn={false} />
         <br></br>----
         <P2 isLoggedIn={true} component={U2} />
       </div>
+
+
+      <div className='cover'>
+        <h1>Lecture 19</h1>
+        <List items={itemsToSend} clickHandler={(received: string) => console.log(received)} />
+      </div>
+
 
       <div>
         <br></br>
