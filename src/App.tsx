@@ -24,6 +24,7 @@ import U2 from './components/18/eg2/U2';
 
 // Lecture-19 - Generics
 import { List } from './components/19/List';
+import { List3 } from './components/19/List'
 
 function App() {
   const itemsToSend: string[] = ['stanley', 'chino', 'daniel', 'pamela']
@@ -70,6 +71,7 @@ function App() {
       <div className='cover'>
         <h1>Lecture 19</h1>
         <List items={itemsToSend} clickHandler={(received: string) => console.log(received)} />
+        <List3 items={['stanley', 2, 3]} clickHandler={(received) => console.log(received)} />
       </div>
 
 
