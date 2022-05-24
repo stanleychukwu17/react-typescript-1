@@ -1,3 +1,4 @@
+// TODO: example 1 - ['stanley', 'chino', 'daniel', 'pamela']
 type listProps = {
     // items: string[] | number[] | {}[]
     items: string[]
@@ -16,7 +17,7 @@ export const List = ({items, clickHandler} : listProps) => {
 
 
 
-// TODO: example 2
+// TODO: example 2 - [1, 2] or ['daniel', 'stanley'] or [{name:'pamela'}, {name:'jane'}] or anything
 type listProps2<T> = {
     items: T[]
     clickHandler: (something: T) => void
@@ -36,7 +37,7 @@ export const List2 = <T extends {}>({items, clickHandler} : listProps2<T>) => {
 
 
 
-// TODO: example 3
+// TODO: example 3 - [1, 2] or ['daniel', 'stanley'] -- only string and numbers array
 type listProps3<T> = {
     items: T[]
     clickHandler: (something: T) => void
@@ -54,7 +55,8 @@ export const List3 = <T extends string | number>({items, clickHandler} : listPro
 }
 
 
-// TODO: example 4
+
+// TODO: example 4 - [{id:1, name:'alex', age:55, gender: male}, {id:2, name:'jane', age:33, gender: female}] or anything
 type listProps4<T> = {
     items: T[]
     clickHandler: (something: T) => void

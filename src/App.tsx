@@ -26,7 +26,7 @@ import U2 from './components/18/eg2/U2';
 import { List } from './components/19/List';
 
 function App() {
-  const itemsToSend: string[] = ['stanley', 'chino', 'danzy', 'pamela']
+  const itemsToSend: string[] = ['stanley', 'chino', 'daniel', 'pamela']
 
   return (
     <div className="App">
