@@ -10,8 +10,9 @@ type privateProps = {
 export default function Private({isLoggedIn}: privateProps) {
     let [allowed, setAllowed] = useState<boolean>(isLoggedIn)
 
-    const eventHandler = (wch: boolean): any => {
+    const eventHandler = (wch: boolean): boolean => {
         setAllowed(wch)
+        return true
     }
 
     if (isLoggedIn || allowed) {
