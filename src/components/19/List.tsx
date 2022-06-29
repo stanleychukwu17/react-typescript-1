@@ -23,8 +23,8 @@ type listProps2<T> = {
     clickHandler: (something: T) => void
 }
 
-// when you extend T as {} is almost as if you're saying it can be any type, this (number, strings, booleans, objects, functions) are all allowed in the array
-// but in the example 3, we limit this T to be only an array of n(umbers and strings)
+// when you extend T as {}, it is almost as if you're saying it can be any type, this (number, strings, booleans, objects, functions) are all allowed in the array
+// but in the example 3, we limit this T to be only an array of (numbers and strings)
 export const List2 = <T extends {}>({items, clickHandler} : listProps2<T>) => {
     return (
         <div>
@@ -37,7 +37,7 @@ export const List2 = <T extends {}>({items, clickHandler} : listProps2<T>) => {
 
 
 
-// TODO: example 3 - [1, 2] or ['daniel', 'stanley'] -- only string and numbers array
+// TODO: example 3 - [1, 2] or ['daniel', 'stanley'] -- only string[] or numbers[] or (String | Numbers)[]
 type listProps3<T> = {
     items: T[]
     clickHandler: (something: T) => void
