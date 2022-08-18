@@ -9,7 +9,7 @@ import Oscar from './components/5/Oscar';
 // lecture-6 - Event props & lecture-7 style props
 import Button from './components/6/Button';
 import Input from './components/6/Input';
-import Container from './components/7/Container';
+import Container, { Container2 } from './components/7/Container';
 
 // please note that props can also be destructured
 // const get_user = ({name, age, gender} : userProps) => this is me right here
@@ -57,6 +57,7 @@ function App() {
       <div className='cover'>
         <h1>Lecture 7</h1>
         <Container style={{color: 'green', fontWeight: 'bold'}} />
+        <Container2 background='yellow' fontSize={20} />
       </div>
 
       <div className='cover'>
