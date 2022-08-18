@@ -2,7 +2,6 @@ type loginProps = {
     clickHandler : () => boolean
 }
 
-
 export default function Login({clickHandler} : loginProps) {
   return (
     <div>

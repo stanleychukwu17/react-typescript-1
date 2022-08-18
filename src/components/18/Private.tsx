@@ -3,7 +3,8 @@ import Login from "./Login"
 import Profile from './Profile';
 
 type privateProps = {
-    isLoggedIn: boolean
+    // isLoggedIn: boolean
+    isLoggedIn: true | false
     // component: React.ComponentType
 }
 
