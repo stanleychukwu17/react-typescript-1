@@ -12,6 +12,7 @@ export const MutableRef = () => {
         interValRef.current = window.setInterval(() => { // returns an id that is of type number
             setTimer(timer => timer + 1)
         }, 1000)
+
         return () => {
             stopTimer()
         }

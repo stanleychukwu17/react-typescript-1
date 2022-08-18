@@ -18,7 +18,7 @@ export default function Container(props: containerProps) {
 export function Container2 ({caller, ...attr}: container2Props & React.CSSProperties) {
     return (
         <div style={attr}>
-            This is from stanley the man
+            This is from stanley the man 2 second container
         </div>
     )
 }
