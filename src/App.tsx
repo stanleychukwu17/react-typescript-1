@@ -36,7 +36,10 @@ function App() {
       <div className='cover'>
         <h1>Lecture 5</h1>
         <Status msg='success' />
-        <Heading>This is the children testing props</Heading>
+        <div>
+          <Heading><div>This is one is a react node or JSX.Element child</div></Heading>
+          <Heading>This is one is a string child</Heading>
+        </div>
         <Oscar>
           <Heading>Showing in the oscars</Heading>
         </Oscar>
