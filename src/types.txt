@@ -13,3 +13,15 @@ type buttonProps = {
 type InputProps = {
     handleClick: (event: React.ChangeEvent<HTMLInputElement>) => Void
 }
+
+type containerProps = {
+    styles: React.CSSProperties
+}
+
+
+if you want to export types, you can do
+-create Person.types.ts or Person.types.d.ts
+export type PersonProps = {
+    firstName: string,
+    lastName: string,
+}
