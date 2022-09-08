@@ -1,0 +1,7 @@
+type boxProps = {
+    children: string
+}
+
+type boxProps = {
+    children: React.ReactNode
+}
