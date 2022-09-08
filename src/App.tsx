@@ -28,7 +28,12 @@ import U2 from './components/18/eg2/U2';
 // Lecture-19 - Generics
 import { List } from './components/19/List';
 import { List3 } from './components/19/List'
+
+// Lecture 22
 import CustomButton from './components/22/Button';
+
+// Lecture 24
+import TextComp from './components/24/Text';
 
 function App() {
   const itemsToSend: string[] = ['stanley', 'chino', 'daniel', 'pamela']
@@ -93,6 +98,14 @@ function App() {
         </CustomButton>
       </div>
 
+      <div className='cover'>
+        <h1>Lecture 24</h1>
+        <div>
+          <TextComp as='h1' size='lg'>Heading</TextComp>
+          <TextComp as='p' size='md'>Paragraph</TextComp>
+          <TextComp as='label' htmlFor='someId' size='sm' color='secondary'>Label</TextComp>
+        </div>
+      </div>
 
 
       <div>
