@@ -15,7 +15,7 @@ type textOwnProps<E extends React.ElementType> = {
 type textProps2<T extends React.ElementType> = textOwnProps<T> &
     Omit<React.ComponentProps<T>, keyof textOwnProps<T>>
 
-export default function TextComp<Z extends React.ElementType>({children, as}: textProps2<Z>) {
+export default function TextComp<Z extends React.ElementType = 'div'>({children, as}: textProps2<Z>) {
     const Component = as || 'div'
 
     return (
