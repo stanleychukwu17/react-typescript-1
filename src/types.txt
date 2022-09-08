@@ -5,3 +5,11 @@ type boxProps = {
 type boxProps = {
     children: React.ReactNode
 }
+
+type buttonProps = {
+    handleClick: (event: React.MouseEvent<HTMLButtonElement>) => Void
+}
+
+type InputProps = {
+    handleClick: (event: React.ChangeEvent<HTMLInputElement>) => Void
+}
