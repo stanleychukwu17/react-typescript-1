@@ -21,10 +21,17 @@ type containerProps = {
 
 if you want to export types, you can do
 -create Person.types.ts or Person.types.d.ts
-export type PersonProps = {
+export type personProps = {
     firstName: string,
     lastName: string,
 }
 
 const inputRef = useRef<HTMLInputElement>(null!)
 const inputRef = useRef<number|undefined>(undefined)
+
+
+type privateProps = {
+    isLoggedIn: boolean,
+    component: React.ComponentType
+    component2: React.ComponentType<personProps> // incase of when the ComponentType receive a props which is in this case a personProps
+}

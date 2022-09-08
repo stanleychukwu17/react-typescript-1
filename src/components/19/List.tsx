@@ -25,6 +25,7 @@ type listProps2<T> = {
 
 // when you extend T as {}, it is almost as if you're saying it can be any type, this (number, strings, booleans, objects, functions) are all allowed in the array
 // but in the example 3, we limit this T to be only an array of (numbers and strings)
+// but here us example 2, T can be anything
 export const List2 = <T extends {}>({items, clickHandler} : listProps2<T>) => {
     return (
         <div>
@@ -63,8 +64,8 @@ type listProps4<T> = {
 }
 
 /**
-    In this example, we want to make sure that each of the objects in the array has an Id and Name values, the object might
-    contain other parameters but, the due of Id and Name must be present
+    In this example, we want to make sure that each of the objects in the array has an id and name values, the object might
+    contain other parameters but, the duo of id and name must be present
 */
 export const List4 = <T extends {id:number, name: string}>({items, clickHandler} : listProps4<T>) => {
     return (
