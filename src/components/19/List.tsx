@@ -57,6 +57,8 @@ export const List3 = <T extends string | number>({items, clickHandler} : listPro
 
 
 
+
+
 // TODO: example 4 - [{id:1, name:'alex', age:55, gender: male}, {id:2, name:'jane', age:33, gender: female}] or anything
 type listProps4<T> = {
     items: T[]

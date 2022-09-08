@@ -85,6 +85,11 @@ function App() {
         <List3 items={['stanley', 2, 3]} clickHandler={(received) => console.log(received)} />
       </div>
 
+      <div className='cover'>
+        <h1>Lecture 20</h1>
+      </div>
+
+
 
       <div>
         <br></br>

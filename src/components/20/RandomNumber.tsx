@@ -14,8 +14,7 @@ type randProps = {
 export default function RandomNumber({value, isPositive, isNegative, isZero}: randProps) {
     return (
         <div>
-            {value} {isPositive && 'positive'} {isNegative && 'negative'} {' '}
-            {isZero && 'zero'}
+            {value} {isPositive && 'positive'} {isNegative && 'negative'} {' '} {isZero && 'zero'}
         </div>
     )
 }
