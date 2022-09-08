@@ -25,3 +25,6 @@ export type PersonProps = {
     firstName: string,
     lastName: string,
 }
+
+const inputRef = useRef<HTMLInputElement>(null!)
+const inputRef = useRef<number|undefined>(undefined)
