@@ -1,6 +1,31 @@
 import React from 'react';
 import './App.css';
 
+/**
+  types to note in this lecture:
+  from lecture 18
+  type p2Props = {
+      isLoggedIn: boolean
+      component: React.ComponentType<u2Props> // means that this component will accept a prop type of <u2Props>, if we don't want to pass in props in some cases, we can do <u2Props | {}>
+  }
+
+
+  --from lecture 22
+  type ButtonProps = {
+      variant: 'primary' | 'secondary',
+  } & React.ComponentProps<'button'>
+
+  type InputProps = React.ComponentProps<'input'>
+
+  type ButtonProps2 = {
+      variant: 'primary' | 'secondary',
+      children: string
+  } & Omit<React.ComponentProps<'button'>, 'children'>
+  <button className={`class-${variant}`} {...rest}> {children} </button>
+
+*/
+
+
 // lecture-5 - Advanced props
 import Status from './components/5/Status';
 import Heading from './components/5/Heading';
@@ -11,6 +36,8 @@ import Button from './components/6/Button';
 import Input from './components/6/Input';
 import Container, { Container2 } from './components/7/Container';
 
+// lecture-7 - style props
+
 // please note that props can also be destructured
 // const get_user = ({name, age, gender} : userProps) => this is me right here
 
@@ -20,7 +47,7 @@ import UserDts from './components/11/User';
 //lecture-16 - useRef Hook
 import {MutableRef} from './components/16/MutableRef';
 
-// lecture-18 - Component Prop
+// lecture-18 - Component Prop, also shows us how to send components as props to another component
 import Private from './components/18/Private';
 import P2 from './components/18/eg2/P2';
 import U2 from './components/18/eg2/U2';
@@ -29,10 +56,15 @@ import U2 from './components/18/eg2/U2';
 import { List } from './components/19/List';
 import { List3 } from './components/19/List'
 
-// Lecture 22
+// 20 Restricting props
+// 21 Template literals and Exclude 
+
+// Lecture 22 - Wrapping HTML Elements
 import CustomButton from './components/22/Button';
 
-// Lecture 24
+// Lecture 23 - Extracting a Components Prop Types
+
+// Lecture 24 - Polymorphic Components
 import TextComp from './components/24/Text';
 
 function App() {
@@ -54,7 +86,9 @@ function App() {
 
       <div className='cover'>
         <h1>Lecture 6</h1>
-        <Button clickHandler={(event, id?: number) => { console.log('clicked me', event, id) }} />
+        <Button clickHandler={(event: React.MouseEvent<HTMLButtonElement>, id?: number) => { console.log('clicked me', event, id) }} />
+        {/*can also do: <Button clickHandler={(event: React.MouseEvent, id?: number) => { console.log('clicked me', event, id) }} /> */}
+        {/*can also do: <Button clickHandler={(event, id?: number) => { console.log('clicked me', event, id) }} /> */}
         <Input
           value='james'
           changeHandler={(event) => { console.log('changed me', event, event.target.value) }}

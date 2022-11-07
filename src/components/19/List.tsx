@@ -66,7 +66,7 @@ type listProps4<T> = {
 }
 
 /**
-    In this example, we want to make sure that each of the objects in the array has an id and name values, the object might
+    In this example, we want to make sure that each of the objects in the array has an id and name key&value, the object might
     contain other parameters but, the duo of id and name must be present
 */
 export const List4 = <T extends {id:number, name: string}>({items, clickHandler} : listProps4<T>) => {

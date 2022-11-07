@@ -28,7 +28,8 @@ type zeroNumber= randNumberType & { sPositive?: never, isNegative?: never, isZer
 
 // there -->
 type randProps2 = positiveNumber | negativeNumber | zeroNumber
-
+const james: randProps2 = {value:5, sPositive: true}
+console.log(james)
 /**
     * so with this now: this (<RandomNumber value={10} isPositive isNegative isZero />) will always throw an error,
     * you can only do <RandomNumber value={10} isPositive /> or 

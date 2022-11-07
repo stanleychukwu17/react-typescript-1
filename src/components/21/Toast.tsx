@@ -8,7 +8,8 @@ type HorizontalPosition = 'left' | 'center' | 'right'
 type VerticalPosition = 'top' | 'center' | 'bottom'
 
 type ToastProps = {
-    position: Exclude<`${HorizontalPosition}-${VerticalPosition}`, 'center-center'> | 'center'
+    position: Exclude<`${HorizontalPosition}-${VerticalPosition}`, 'center-center'> | 'center',
+    // angler: Omit<`${HorizontalPosition}-${VerticalPosition}`, 'center-center'> | 'center', // 'Omit' cannot achieve the same result as 'Exclude'
 }
 
 export default function Toast({position}: ToastProps) {

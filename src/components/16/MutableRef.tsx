@@ -9,7 +9,7 @@ export const MutableRef = () => {
     }
 
     useEffect(() => {
-        interValRef.current = window.setInterval(() => { // returns an id that is of type number
+        interValRef.current = window.setInterval(() => { // returns an ID, every setInterval returns a unique ID(where ID:number)
             setTimer(timer => timer + 1)
         }, 1000)
 

@@ -3,7 +3,7 @@ type containerProps = {
 }
 
 interface container2Props {
-    caller?: 'stanley' | 'daniel'
+    caller?: 'stanley' | 'chukwu'
 }
 
 export default function Container(props: containerProps) {

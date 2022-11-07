@@ -5,7 +5,6 @@ import Profile from './Profile';
 type privateProps = {
     // isLoggedIn: boolean
     isLoggedIn: true | false
-    // component: React.ComponentType
 }
 
 export default function Private({isLoggedIn}: privateProps) {
