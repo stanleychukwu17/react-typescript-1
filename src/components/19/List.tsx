@@ -45,7 +45,7 @@ type listProps3<T> = {
 }
 
 // In this example, T can only be strings and numbers
-export const List3 = <T extends string | number>({items, clickHandler} : listProps3<T>) => {
+export const List3 = <myGuy extends string | number>({items, clickHandler} : listProps3<myGuy>) => {
     return (
         <div>
             {items.map((ech, ind) => {
