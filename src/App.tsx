@@ -1,31 +1,6 @@
 import React from 'react';
 import './App.css';
 
-/**
-  types to note in this lecture:
-  from lecture 18
-  type p2Props = {
-      isLoggedIn: boolean
-      component: React.ComponentType<u2Props> // means that this component will accept a prop type of <u2Props>, if we don't want to pass in props in some cases, we can do <u2Props | {}>
-  }
-
-
-  --from lecture 22
-  type ButtonProps = {
-      variant: 'primary' | 'secondary',
-  } & React.ComponentProps<'button'>
-
-  type InputProps = React.ComponentProps<'input'>
-
-  type ButtonProps2 = {
-      variant: 'primary' | 'secondary',
-      children: string
-  } & Omit<React.ComponentProps<'button'>, 'children'>
-  <button className={`class-${variant}`} {...rest}> {children} </button>
-
-*/
-
-
 // lecture-5 - Advanced props
 import Status from './components/5/Status';
 import Heading from './components/5/Heading';
