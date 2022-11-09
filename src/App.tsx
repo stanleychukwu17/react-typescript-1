@@ -22,7 +22,7 @@ import UserDts from './components/11/User';
 //lecture-16 - useRef Hook
 import {MutableRef} from './components/16/MutableRef';
 
-// lecture-18 - Component Prop, also shows us how to send components as props to another component
+// lecture-18 - Component as a Prop, shows us how to send components as props to another component
 import Private from './components/18/Private';
 import P2 from './components/18/eg2/P2';
 import U2 from './components/18/eg2/U2';
