@@ -1,5 +1,18 @@
 // types to note in this lecture:
 
+// from lecture 6
+    export type buttonProps = {
+        clickHandler: (event: React.MouseEvent<HTMLButtonElement>, id?: number) => void
+    }
+    export type inputProps = {
+        value: string
+        changeHandler: (event: React.ChangeEvent<HTMLInputElement>, id?: number) => void
+    }
+
+// from lecture 7
+
+
+
 // from lecture 18
     export type p2Props = {
         isLoggedIn: boolean
