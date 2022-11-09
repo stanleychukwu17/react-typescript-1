@@ -106,6 +106,11 @@ function App() {
           Click me
         </CustomButton>
       </div>
+    
+      <div className='cover'>
+        <h1>Lecture 23</h1>
+
+      </div>
 
       <div className='cover'>
         <h1>Lecture 24</h1>

@@ -39,14 +39,16 @@ function from18() {
 }
 
 // --from lecture 22
-    export type ButtonProps = {
+function from22() {
+    type ButtonProps = {
         variant: 'primary' | 'secondary',
     } & React.ComponentProps<'button'>
 
-    export type InputProps = React.ComponentProps<'input'>
+    type InputProps = React.ComponentProps<'input'>
 
-    export type ButtonProps2 = {
+    type ButtonProps2 = {
         variant: 'primary' | 'secondary',
         children: string
     } & Omit<React.ComponentProps<'button'>, 'children'>
     // <button className={`class-${variant}`} {...rest}> {children} </button>
+}
