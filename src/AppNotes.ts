@@ -1,5 +1,6 @@
 // types to note in this lecture:
 import { u2Props } from "./components/18/eg2/U2"
+import Container from './components/7/Container'
 
 // from lecture 6
 export function from6() {
@@ -51,4 +52,13 @@ function from22() {
         children: string
     } & Omit<React.ComponentProps<'button'>, 'children'>
     // <button className={`class-${variant}`} {...rest}> {children} </button>
+}
+
+
+//--from lecture 23
+function from23() {
+    function CustomComp(props: React.ComponentProps<typeof Container> & {children: string}) {
+        const james = props.style.color
+        return  // <div>{james}</div>
+    }
 }
