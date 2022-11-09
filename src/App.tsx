@@ -38,6 +38,7 @@ import { List3 } from './components/19/List'
 import CustomButton from './components/22/Button';
 
 // Lecture 23 - Extracting a Components Prop Types
+import CustomComp from './components/23/customComponent';
 
 // Lecture 24 - Polymorphic Components
 import TextComp from './components/24/Text';
@@ -109,7 +110,9 @@ function App() {
     
       <div className='cover'>
         <h1>Lecture 23</h1>
-
+        <div className="">
+          <CustomComp style={{color: 'green', fontWeight: 'bold'}} >Guy of life</CustomComp>
+        </div>
       </div>
 
       <div className='cover'>
