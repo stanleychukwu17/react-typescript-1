@@ -1,11 +1,6 @@
 type containerProps = {
     style: React.CSSProperties
 }
-
-interface container2Props {
-    caller?: 'stanley' | 'chukwu'
-}
-
 export default function Container(props: containerProps) {
     return (
         <div style={props.style}>
@@ -15,6 +10,9 @@ export default function Container(props: containerProps) {
 }
 
 
+interface container2Props {
+    caller?: 'stanley' | 'chukwu'
+}
 export function Container2 ({caller, ...style}: container2Props & React.CSSProperties) {
     return (
         <div style={style}>
