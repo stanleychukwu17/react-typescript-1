@@ -23,7 +23,7 @@ type listProps2<T> = {
     clickHandler: (something: T) => void
 }
 
-// when you extend T as {}, it is almost as if you're saying it can be any type, this (number, strings, booleans, objects, functions) are all allowed in the array
+// when you extend T as {}, you're saying it has to be an object. this object can contain (number, strings, booleans, objects, functions).. so it will be an object of arrays
 // but in the example 3, we limit this T to be only an array of (numbers and strings)
 // but here us example 2, T can be anything
 export const List2 = <T extends {}>({items, clickHandler} : listProps2<T>) => {

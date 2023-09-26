@@ -14,7 +14,8 @@ export default function UserDts() {
     */
     const handleLogin = () => {
         setUser({
-            name: 'Stanley', 'email':'stanley4Christ@yahoo.com'
+            name:'Stanley',
+            email:'stanley4Christ@yahoo.com'
         })
     }
 

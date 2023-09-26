@@ -22,8 +22,8 @@ export default function RandomNumber({value, isPositive, isNegative, isZero}: ra
 
 // TODO: example 2
 type randNumberType = {value: number}
-type positiveNumber= randNumberType & { sPositive: boolean, isNegative?: never, isZero?: never }
-type negativeNumber= randNumberType & { sPositive?: never, isNegative: boolean, isZero?: never}
+type positiveNumber = randNumberType & { sPositive: boolean, isNegative?: never, isZero?: never }
+type negativeNumber = randNumberType & { sPositive?: never, isNegative: boolean, isZero?: never}
 type zeroNumber= randNumberType & { sPositive?: never, isNegative?: never, isZero: boolean }
 
 // there -->
