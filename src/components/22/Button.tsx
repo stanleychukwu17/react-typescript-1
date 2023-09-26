@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // E.g 1
 type ButtonProps = {
     variant: 'primary' | 'secondary',

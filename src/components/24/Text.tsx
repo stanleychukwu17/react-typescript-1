@@ -20,6 +20,5 @@ export default function TextComp<Z extends React.ElementType = 'div'>({children,
 
     return (
         <Component>{children}</Component>
-
     )
 }
