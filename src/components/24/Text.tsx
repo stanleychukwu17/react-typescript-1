@@ -8,11 +8,15 @@ type textOwnProps<E extends React.ElementType> = {
     as?: E
 }
 
-// instead of using the one below(i.e textProps), using the next one 'textProps2'
-// type textProps<T extends React.ElementType> = textOwnProps<T> & React.ComponentProps<T>
+/**
+    instead of using the one above(i.e textOwnProps), use the next one 'textProps2', type textProps<T extends React.ElementType> = textOwnProps<T> & React.ComponentProps<T>
+*/
+// 
+// 
 
 // to avoid name collision from our textOwnProps and React.ComponentProps, we will use the Omit to omit the names already specified in TextOwnProps, at-least we know that if any other ones does not collide, the 'children' names will collide
-type textProps2<T extends React.ElementType> = textOwnProps<T> &
+type textProps2<T extends React.ElementType> =
+    textOwnProps<T> &
     Omit<React.ComponentProps<T>, keyof textOwnProps<T>>
 
 export default function TextComp<Z extends React.ElementType = 'div'>({children, as}: textProps2<Z>) {
