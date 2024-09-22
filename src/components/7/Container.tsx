@@ -16,7 +16,7 @@ interface container2Props {
 export function Container2 ({caller, ...style}: container2Props & React.CSSProperties) {
     return (
         <div style={style}>
-            This is from stanley the man 2 second container
+            This is from {caller} the man 2 second container
         </div>
     )
 }
